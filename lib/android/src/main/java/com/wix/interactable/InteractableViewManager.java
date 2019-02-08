@@ -122,6 +122,11 @@ public class InteractableViewManager extends ViewGroupManager<InteractableView> 
         view.setAlertAreas(RNConvert.interactablePoints(alertAreas));
     }
 
+    @ReactProp(name = "clipChildrenAndroid")
+    public void setClipChildren(InteractableView view, @Nullable boolean clipChildrenAndroid) {
+        view.setClipChildren(clipChildrenAndroid);
+    }
+
     @ReactProp(name = "dragWithSpring")
     public void setDrag(InteractableView view, @Nullable ReadableMap dragWithSpring) {
         view.setDragWithSpring(RNConvert.interactableDrag(dragWithSpring));
