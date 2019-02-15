@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/gomymove/react-native-interactable.git", :branch => "mymove-fixes" }
-  s.source_files  = "lib/ios/Interactable/*.{h,m}"
+  s.source_files  = "ios/Interactable/*.{h,m}"
 
   s.dependency 'React'
 end
